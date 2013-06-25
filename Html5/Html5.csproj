@@ -197,6 +197,7 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Index.html" />
+    <Content Include="TagsAndInput.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />

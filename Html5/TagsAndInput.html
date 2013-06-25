@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <style>
+        *{ margin: 0; padding: 0}
+        html { overflow-x: hidden; overflow-y: auto; }
+        .area {
+            border: 1px solid grey;
+            margin-left: 100px;
+            float: left;
+            position: relative;
+            padding: 10px;
+        }
+        #main{ float: left;width: 8000px;height: 1000px;background-color: pink;}
+        #link{ position: fixed;}
+        ul{ list-style: none;}
+        h1{ text-align: center;}
+    </style>
+</head>
+<body>
+    <section id="main">
+        <div id="Div1" class="area" data-number="1">
+            <ul>
+                <li>
+                    <h1>Html5 语义化标签</h1>
+                </li>
+                <li>
+                    <h3>Article</h3>
+                </li>
+            </ul>
+
+        </div>
+        <div id="Div2" class="area" data-number="2">
+            <ul>
+                <li>
+                    <h1>Html5 语义化标签</h1>
+                </li>
+                <li>
+                    <h3>Article</h3>
+                </li>
+            </ul>
+        </div>
+        <div id="Div3" class="area" data-number="3">3</div>
+        <div id="Div4" class="area" data-number="4">4</div>
+        <div id="Div5" class="area" data-number="5">5</div>
+        <div id="Div6" class="area" data-number="6">6</div>
+    </section>
+    
+    
+    <section id="link">
+        Tag&Input  Video&Audio  Canvas   WebStorage  WebSocket 
+    </section>
+
+    <script>
+        var availWidth = window.screen.availWidth;
+        var availHeight = window.screen.availHeight;
+        var areaWidth = availWidth / 2;
+        var areaHeight = availHeight / 1.5;
+        var space = availWidth / 8;
+        
+        $('.area').css({ 'width': areaWidth, 'height': areaHeight, 'margin-left': space, 'top': space/2});
+        $('#main').css('padding-left',space/2);
+        $('#link').css({ 'bottom': space / 6, 'left': space*2 });
+
+        var current = 1;
+        var scrollPosition = 0;
+        var offset = space*2;
+        $('.area').bind('click', function () {
+            var number =parseInt($(this).attr('data-number'));
+            if (number > current) {
+                scrollPosition += space*5;
+            }else if (number < current) {
+                scrollPosition -= space*5;
+            }
+            current = number;
+            window.scrollTo(scrollPosition, 0);
+        });
+
+    </script>
+</body>
+</html>
+
