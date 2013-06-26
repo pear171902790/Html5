@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+</head>
+<body>
+    <section id="write">
+        <ul>
+            <li>
+                <label>用途</label>
+                <input type="text" id="use" />
+            </li>
+            <li>
+                <label>消费人</label>
+                <input type="text" id="person" />
+            </li>
+            <li>
+                <label>金额</label>
+                <input type="number" id="money" />元
+            </li>
+            <li>
+                <label>日期</label>
+                <input type="date" id="date" />
+                <input type="time" id="time" />
+            </li>
+            <li>
+                <input type="button" value="添加" id="add" />
+            </li>
+        </ul>
+    </section>
+    <section id="read">
+        <table id="show">
+            <tr><th>用途</th><th>消费者</th><th>金额</th><th>日期时间</th></tr>
+        </table>
+    </section>
+    <script>
+        var db = openDatabase('account', '1.0', 'account', 2 * 1024 * 1024);
+
+        var addConsumptionRecord = function (use, person, money, date, time) {
+            db.transaction(function (tx) {
+                tx.executeSql('insert into ConsumptionRecord values(?,?,?,?,?)', [use, person, money, date, time], function () {
+                    alert('添加成功');
+                    window.location.reload();
+                }, function (tn, error) { alert(error.source + ':' + error.message); });
+            });
+        };
+
+        var createConsumptionRecordTable = function () {
+            db.transaction(function (tx) {
+                tx.executeSql('create table if not exists ConsumptionRecord(use TEXT,person TEXT,money DECIMAL,date TEXT,time TEXT)', [], function (tn) {
+                    alert('create success');
+                });
+            });
+        };
+
+        var clearTable = function (tableName) {
+            db.transaction(function (tx) {
+                tx.executeSql('delete from ' + tableName, [], function (tn) {
+                    alert('clear success');
+                });
+            });
+        };
+
+        var dropTable = function (tableName) {
+            db.transaction(function (tx) {
+                tx.executeSql('drop table ' + tableName, [], function () {
+                    alert('drop success');
+                }, function (tn, error) {
+                    alert(error.message);
+                });
+            });
+        };
+
+        $('#add').bind('click', function () {
+            var use = $('#use').val();
+            var person = $('#person').val();
+            var money = $('#money').val();
+            var date = $('#date').val();
+            var time = $('#time').val();
+            addConsumptionRecord(use, person, money, date, time);
+        });
+
+        var show = function () {
+            db.transaction(function (tx) {
+                tx.executeSql('select * from ConsumptionRecord', [],
+                    function (tn, result) {
+                        for (var i = 0; i < result.rows.length; i++) {
+                            var row = result.rows.item(i);
+                            var append = '<tr><td>' + row.use + '</td><td>' + row.person + '</td><td>' + row.money + '元</td><td>' + row.date + ' ' + row.time + '</td></tr>';
+                            $('#show').append(append);
+                        }
+                    }, function (tn, error) {
+                        alert(error.message);
+                    });
+            });
+
+        };
+
+        var init = function () {
+            //dropTable('ConsumptionRecord');
+            //createConsumptionRecordTable();
+            //clearTable('ConsumptionRecord');
+            show();
+        };
+
+        init();
+    </script>
+</body>
+</html>

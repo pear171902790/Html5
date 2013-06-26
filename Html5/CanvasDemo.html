@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <style>
+        *{ margin: 0; padding: 0}
+        section{ float: left;}
+        #explain{ margin-top: 300px;}
+        header{ text-align: center;}
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <section id="main">
+        <section id="graphSection">
+            <header>3种编程语言连续5年的使用人数统计</header>
+            <canvas id="graphCanvas" width="800" height="800"></canvas>
+        </section>
+        <section id="setSection">
+            <header></header>
+            <canvas id="explain" width="300" height="300"></canvas>
+        </section>
+    </section>
+    <footer>
+        
+    </footer>
+    
+    
+    
+    <script>
+        
+        function drawXY(context) {
+            context.beginPath();
+            context.moveTo(50, 550);
+            context.lineTo(50, 0);
+            context.lineTo(45, 10);
+            context.moveTo(50, 0);
+            context.lineTo(55, 10);
+            context.moveTo(50, 550);
+            context.lineTo(750, 550);
+            context.lineTo(740, 545);
+            context.moveTo(750, 550);
+            context.lineTo(740, 555);
+            context.closePath();
+            context.stroke();
+            var x = 50;
+            for (var i = 2009; i <= 2013; i++) {
+                var text = i.toString();
+                x += 100;
+                context.fillText(text, x, 560);
+            }
+            var y = 550;
+            for (var i = 1; i <= 5; i++) {
+                var text = i.toString() + '0,000';
+                y -= 100;
+                context.fillText(text, 10, y);
+            }
+        }
+        function getTotalPosition(total) {
+            return 550 - total / 100;
+        }
+        function drawGraph(context, arr, color) {
+            context.beginPath();
+            var xPosition = 150;
+            var yPosition = 0;
+            for (var i = 0; i < arr.length; i++) {
+                var data = arr[i];
+                yPosition = getTotalPosition(data);
+                if (i == 0) {
+                    context.moveTo(xPosition, yPosition);
+                } else {
+                    context.lineTo(xPosition, yPosition);
+                }
+                context.fillText(data.toString(), xPosition, yPosition);
+                xPosition += 100;
+            }
+            context.moveTo(0, 0);
+            context.closePath();
+            context.strokeStyle = color;
+            context.stroke();
+        }
+
+        var canvas = document.getElementById('graphCanvas');
+        var context = canvas.getContext('2d');
+        drawXY(context);
+        
+        var arrCharp = [12000, 20000, 16000, 22000, 14000];
+        var arrJava = [31000, 35000, 36000, 32000, 29000];
+        var arrRuby = [8900, 11000, 12000, 10000, 7900];
+
+        drawGraph(context,arrCharp,'green');
+        drawGraph(context,arrJava,'blue');
+        drawGraph(context, arrRuby, 'pink');
+
+
+        var explain = document.getElementById('explain');
+        var ctx = explain.getContext('2d');
+
+        ctx.fillText('C#', 0, 10);
+        ctx.fillStyle = 'green';
+        ctx.fillRect(50, 0, 30, 20);
+        
+        ctx.fillText('Java', 0, 50);
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50,40, 30, 20);
+        
+        ctx.fillText('Ruby', 0, 100);
+        ctx.fillStyle = 'pink';
+        ctx.fillRect(50, 90, 30, 20);
+
+        
+
+        
+
+    </script>
+</body>
+</html>
