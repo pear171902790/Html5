@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <style>
+        html { overflow-x: hidden; overflow-y: auto; }
+        .area {
+            border: 1px solid grey;
+            margin-left: 100px;
+            float: left;
+            width: 800px;
+            height: 500px;
+            position: relative;
+            top: 80px;
+        }
+        #main{ float: left;width: 8000px;height: 700px;background-color: pink;position: relative;top: 40px;padding-left: 500px;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="Div1" class="area">1</div>
+        <div id="Div2" class="area">2</div>
+        <div id="Div3" class="area">3</div>
+        <div id="Div4" class="area">4</div>
+        <div id="Div5" class="area">5</div>
+        <div id="Div6" class="area">6</div>
+    </div>
+    
+    <script>
+        var current = 1;
+        var offset = 200;
+        $('.area').bind('click', function () {
+            window.scrollTo(x, 0);
+            x += 200;
+        });
+
+    </script>
+</body>
+</html>
+
