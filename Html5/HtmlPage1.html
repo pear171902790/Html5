@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <style>
+        *{ margin: 0; padding: 0}
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <section id="main">
+        <section id="graphSection">
+            <header></header>
+            <canvas id="graphCanvas" width="800" height="800"></canvas>
+        </section>
+        <section id="setSection">
+            <header></header>
+        </section>
+    </section>
+    <footer>
+        
+    </footer>
+    
+    
+    
+    <script>
+        var canvas = document.getElementById('graphCanvas');
+        var context = canvas.getContext('2d');
+        context.beginPath();
+        context.moveTo(50, 550);
+        context.lineTo(50, 0);
+        context.lineTo(45, 10);
+        context.moveTo(50, 0);
+        context.lineTo(55, 10);
+        
+        context.moveTo(50, 550);
+        context.lineTo(750, 550);
+        context.lineTo(740, 545);
+        context.moveTo(750, 550);
+        context.lineTo(740, 555);
+        context.closePath();
+        context.stroke();
+
+        var x = 50;
+        for (var i = 2009; i <= 2013; i++) {
+            var text = i.toString();
+            x += 100;
+            context.fillText(text, x, 550);
+        }
+        
+
+        var y = 550;
+        for (var i = 1; i <= 5; i++) {
+            var text = i.toString()+'0,000';
+            y -= 100;
+            context.fillText(text, 50, y);
+        }
+
+        var total = 12000;
+
+        function getTotal(total) {
+            if (total > 10000) {
+                return 550 - total / 100;
+            } else {
+                return 550 + total / 100;
+            }
+        }
+
+        var arr = [{year:2009,total:12000}, {year:2010,total:20000}, {year:2011,total:16000}, {year:2012,total:22000}, {year:2013,total:14000}];
+
+
+        context.beginPath();
+
+        var xPosition = 150;
+        var yPosition = 0;
+        for (var i = 0; i < arr.length; i++) {
+            var data = arr[i];
+            yPosition = getTotal(data.total);
+            if (i == 0) {
+                context.moveTo(xPosition, yPosition);
+            } else {
+                context.lineTo(xPosition, yPosition);
+            }
+            context.fillText(data.total.toString(), xPosition, yPosition);
+            xPosition += 100;
+        }
+        context.moveTo(0, 0);
+        context.closePath();
+        context.stroke();
+
+
+
+    </script>
+</body>
+</html>

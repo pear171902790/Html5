@@ -12,12 +12,12 @@
             margin-left: 100px;
             float: left;
             position: relative;
-            padding: 10px;
         }
         #main{ float: left;width: 8000px;height: 1000px;background-color: pink;}
         #link{ position: fixed;}
         ul{ list-style: none;}
         h1{ text-align: center;}
+        li{ border-bottom: 1px solid grey;}
     </style>
 </head>
 <body>
@@ -25,11 +25,16 @@
         <div id="Div1" class="area" data-number="1">
             <ul>
                 <li>
-                    <h1>Html5 语义化标签</h1>
+                    <h1>新的HTML5结构标签-语义化标签</h1>
                 </li>
                 <li>
-                    <h3>Article</h3>
-                </li>
+                    <h2>为什么要有语义化标签？</h2>
+                    <h5>-  滥用div</h5>
+                    <pre>
+                        <div></div>
+
+                    </pre>
+                    </li>
             </ul>
 
         </div>
@@ -61,7 +66,7 @@
         var areaHeight = availHeight / 1.5;
         var space = availWidth / 8;
         
-        $('.area').css({ 'width': areaWidth, 'height': areaHeight, 'margin-left': space, 'top': space/2});
+        $('.area').css({ 'width': areaWidth, 'height': areaHeight, 'margin-left': space, 'top': space/2,'padding':space/4});
         $('#main').css('padding-left',space/2);
         $('#link').css({ 'bottom': space / 6, 'left': space*2 });
 
