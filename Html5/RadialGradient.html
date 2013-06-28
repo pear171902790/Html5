@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <canvas id="yourCanvas" width="500" height="500"></canvas>
+    <script>
+        var cs = document.getElementById('myCanvas');
+        if (cs && cs.getContext) {
+            var context = cs.getContext('2d');
+            if (context) {
+                context.moveTo(250, 250);
+                var g = context.createRadialGradient(250, 250, 10, 250, 250, 300);
+                g.addColorStop(0.0, 'white');
+                g.addColorStop(0.2, 'yellow');
+                g.addColorStop(0.8, 'red');
+                g.addColorStop(1.0, 'white');
+                context.beginPath();
+                context.arc(250, 250, 150, 0, 360, false);
+                context.closePath();
+                context.fillStyle = g;
+                context.fill();
+            }
+        }
+
+
+    </script>
+</body>
+</html>

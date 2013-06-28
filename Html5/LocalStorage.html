@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <style>
+        ul{ list-style: none;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <textarea id="message"></textarea>
+        </li>
+        <li>
+            <input type="button" id="append" value="append" />
+            <input type="button" id="clear" value="clear" />
+        </li>
+        <li id="show_area"></li>
+    </ul>
+    <script>
+        var localStorage = window.localStorage;
+        var $show_area = $('#show_area');
+        var $message = $('#message');
+        var $append = $('#append');
+        var $clear = $('#clear');
+
+        $append.bind('click', function () {
+            var t = new Date();
+            var time = t.toLocaleDateString() + '  ' + t.toLocaleTimeString();
+            var message = $message.val();
+            localStorage.setItem(time, message);
+            var item = 'Message:  ' + message + '<br/>Time:  ' + time + '<br/><br/>';
+            $show_area.html($show_area.html() + item);
+            $message.val('');
+        });
+
+        $clear.bind('click', function () {
+            $show_area.html('');
+            localStorage.clear();
+        });
+
+        var init = function () {
+            for (var i = 0; i < localStorage.length; i++) {
+                var key = localStorage.key(i);
+                var value = localStorage.getItem(key);
+                var item = 'Message:  ' + value + '<br/>Time:  ' + key + '<br/><br/>';
+                $show_area.html($show_area.html() + item);
+            }
+        };
+        init();
+
+    </script>
+</body>
+</html>

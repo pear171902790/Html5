@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 1px dashed grey;
+            text-align: center;
+        }
+
+        body ,html{
+            border: 0;
+        }
+
+            body header {
+                margin: 10px auto;
+                width: 600px;
+                height: 100px;
+            }
+
+                body header nav {
+                    margin: 30px auto 5px auto;
+                    width: 500px;
+                    height: 40px;
+                }
+
+        #middle {
+            margin: 5px auto;
+            width: 600px;
+            height: 600px;
+            border: 0;
+            padding: 0 5px;
+        }
+
+        #left {
+            width: 400px;
+            height: 600px;
+            float: left;
+        }
+
+        #right {
+            width: 190px;
+            height: 600px;
+            float: right;
+        }
+
+        body footer {
+            margin: 10px auto;
+            width: 600px;
+            height: 60px;
+        }
+        #left header{ width: 350px;height: 40px;margin: 20px auto 10px auto;}
+        #left article{ width: 350px;height: 220px;margin: 10px auto;}
+        #left footer{ width: 350px;height: 40px;margin: 10px auto;}
+        #right header{ width: 150px;height: 40px; margin: 20px auto 10px auto;}
+        #right nav{ width: 150px;height: 300px;margin: 10px auto;}
+        #left article header,#left article footer{ width: 300px;height: 20px;margin: 10px auto;}
+        #left article p{ width: 300px;height: 120px;margin: 10px auto;}
+    </style>
+</head>
+<body>
+    <header>
+        header
+        <nav>nav</nav>
+    </header>
+    <div id="middle">
+        <section id="left">
+            section
+            <header>header</header>
+            <article>
+                article
+                <header>header</header>
+                <p>p</p>
+                <footer>footer</footer>    
+            </article>
+            <article>
+                article
+                <header>header</header>
+                <p>p</p>
+                <footer>footer</footer>   
+            </article>
+            <footer>footer</footer>
+        </section>
+        <section id="right">
+            section
+            <header>header</header>
+            <nav>nav</nav>
+        </section>
+    </div>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>

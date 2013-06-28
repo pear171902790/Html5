@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+</head>
+<body>
+   循环累加：<input type="text" id="num"/><input type="button" id="btn" value="btn"/>
+    <input type="text" id="result"/>
+    <script>
+        var worker = new Worker('WebWorker.js');
+        worker.onmessage = function (evt) {
+            alert(evt.data);
+        };
+        $('#btn').bind('click', function () {
+            var num = parseInt($('#num').val(), 10);
+            worker.postMessage(num);
+        });
+
+    </script>
+</body>
+</html>

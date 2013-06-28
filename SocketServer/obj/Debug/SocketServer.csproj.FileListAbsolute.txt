@@ -1,0 +1,1 @@
+D:\work\Html5\SocketServer\bin\Debug\SocketServer.exe.config

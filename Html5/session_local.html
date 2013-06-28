@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <title></title>
+    <style>
+        header,p,footer{ width: 300px;height: 100px;border: 1px solid grey;}
+    </style>
+</head>
+<body>
+    <article>
+        <header>header</header>
+        <p>p</p>
+        <footer>footer</footer>
+    </article>
+    
+    <ol>
+        <li>header's background color <input type="color" id="header_color"/></li>
+        <li>p's background color <input type="color" id="p_color"/></li>
+        <li>footer's background color <input type="color" id="footer_color"/></li>
+    </ol>
+    <input type="button" id="btnSave" value="set"/>
+
+    <script>
+        apply();
+        $('#btnSave').bind('click', function () {
+            save_settings();
+        });
+        
+        var localStorage = window.localStorage;
+        var sessionStorage = window.sessionStorage;
+
+        function save_settings() {
+            sessionStorage.setItem('header_color', $('#header_color').val());
+            localStorage.setItem('p_color', $('#p_color').val());
+            sessionStorage.setItem('footer_color', $('#footer_color').val());
+            apply();
+        }
+
+        function load_settings() {
+
+        }
+
+        function apply() {
+            $('article header').css('backgroundColor', sessionStorage.getItem('header_color'));
+            $('article p').css('backgroundColor', localStorage.getItem('p_color'));
+            $('article footer').css('backgroundColor', sessionStorage.getItem('footer_color'));
+        }
+    </script>
+</body>
+</html>

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html5", "Html5\Html5.csproj", "{F7A4C3DB-D2F6-4428-96A9-50CC19FA40C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServer", "SocketServer\SocketServer.csproj", "{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{F7A4C3DB-D2F6-4428-96A9-50CC19FA40C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7A4C3DB-D2F6-4428-96A9-50CC19FA40C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7A4C3DB-D2F6-4428-96A9-50CC19FA40C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
