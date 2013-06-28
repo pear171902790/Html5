@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+</head>
+<body>
+    <input type="button" value="连接" id="connect"/> <input type="button" value="关闭" id="close"/><br/>
+    <input type="text" id="message"/><br/>
+    <input type="button" value="发送消息" id="send"/><br>
+    <p></p>
+    
+    
+
+    
+    <script>
+        var host = 'ws://localhost:8181';
+        var webSocket;
+        $('#connect').click(function() {
+            webSocket = new WebSocket(host);
+            webSocket.onopen = function (evt) {
+                alert('连接成功');
+            };
+            webSocket.onmessage = function (evt) {
+                $('p').html($('p').html() + '<br/>服务器发来消息：' + evt.data);
+            };
+            webSocket.onclose = function (evt) {
+                alert('连接已关闭');
+            };
+        });
+        $('#close').click(function() {
+            webSocket.close();
+        });
+        $('#send').click(function() {
+            webSocket.send($('#message').val());
+            $('p').html($('p').html() + '<br/>向服务器发消息：' + $('#message').val());
+        });
+        
+    </script>
+</body>
+</html>

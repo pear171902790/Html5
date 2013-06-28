@@ -1,1 +1,7 @@
 D:\work\Html5\SocketServer\bin\Debug\SocketServer.exe.config
+D:\work\Html5\SocketServer\bin\Debug\SocketServer.exe
+D:\work\Html5\SocketServer\bin\Debug\SocketServer.pdb
+D:\work\Html5\SocketServer\bin\Debug\Fleck.pdb
+D:\work\Html5\SocketServer\obj\Debug\SocketServer.csprojResolveAssemblyReference.cache
+D:\work\Html5\SocketServer\obj\Debug\SocketServer.exe
+D:\work\Html5\SocketServer\obj\Debug\SocketServer.pdb

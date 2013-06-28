@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html5", "Html5\Html5.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServer", "SocketServer\SocketServer.csproj", "{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherSite", "AnotherSite\AnotherSite.csproj", "{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3A2947A-9FF9-469E-A5F5-5A28D12FF85F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

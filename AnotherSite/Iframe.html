@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="jquery-1.7.1.js"></script>
+    <style>
+        body{ background-color: pink;}
+    </style>
+</head>
+<body>
+    <input type="button" id="postMessageToFatherWindow" value="postMessageToFatherWindow"/>
+    
+    
+   <script>
+       $('#postMessageToFatherWindow').bind('click', function (ev) {
+           window.parent.postMessage('i am iframe', 'http://localhost:5351/StrideDomain.html');
+       });
+
+       window.addEventListener('message', function (ev) {
+           alert(ev.data);
+       }, false);
+   </script>
+</body>
+</html>

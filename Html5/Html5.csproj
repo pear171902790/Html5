@@ -129,6 +129,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="drag_drop.html" />
+    <Content Include="Geo.html" />
     <Content Include="RadialGradient.html" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
@@ -192,7 +193,9 @@
     <Content Include="NewTags.html" />
     <Content Include="LocalStorage.html" />
     <Content Include="session_local.html" />
+    <Content Include="StrideDomain.html" />
     <Content Include="Video_Audio.html" />
+    <Content Include="WebSocket.html" />
     <Content Include="WebSQLDataBaseDemo.html" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
@@ -337,7 +340,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>3940</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:5351/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

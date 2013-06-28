@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>
+        function init() {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var coords = position.coords;
+                var latlng = new google.maps.LatLng(coords.latitude, coords.longitude);
+                var myOptions = {
+                    zoom: 14,
+                    center: latlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var mapl;
+                mapl = new google.maps.Map(document.getElementById('map'), myOptions);
+
+                var marker = new google.maps.Marker({
+                    position: latlng,
+                    map: mapl
+                });
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: '当前位置!'
+                });
+
+                infowindow.open(mapl, marker);
+            });
+        }
+    </script>
+</head>
+<body onload="init()">
+    <div id="map" style="width:400px;height: 400px"></div>
+    
+
+</body>
+</html>

@@ -18,21 +18,20 @@ namespace SocketServer
             {
                 socket.OnOpen = () =>
                 {
-                    Console.WriteLine("Open!");
+                    Console.WriteLine("连接成功");
                     allSockets.Add(socket);
                 };
                 socket.OnClose = () =>
                 {
-                    Console.WriteLine("Close!");
+                    Console.WriteLine("连接已关闭");
                     allSockets.Remove(socket);
                 };
                 socket.OnMessage = message =>
                 {
-                    Console.WriteLine(message);
-                    allSockets.ToList().ForEach(s => s.Send("Echo: " + message));
+                    Console.WriteLine("客户端发来消息"+message);
+                    //allSockets.ForEach(s => s.Send(message));
                 };
             });
-
             
             var input = Console.ReadLine();
             while (input != "exit")

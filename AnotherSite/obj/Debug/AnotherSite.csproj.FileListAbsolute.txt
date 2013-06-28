@@ -1,0 +1,4 @@
+D:\work\Html5\AnotherSite\bin\AnotherSite.dll
+D:\work\Html5\AnotherSite\bin\AnotherSite.pdb
+D:\work\Html5\AnotherSite\obj\Debug\AnotherSite.dll
+D:\work\Html5\AnotherSite\obj\Debug\AnotherSite.pdb
