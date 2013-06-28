@@ -194,6 +194,7 @@
     <Content Include="LocalStorage.html" />
     <Content Include="session_local.html" />
     <Content Include="StrideDomain.html" />
+    <Content Include="temp.html" />
     <Content Include="Video_Audio.html" />
     <Content Include="WebSocket.html" />
     <Content Include="WebSQLDataBaseDemo.html" />

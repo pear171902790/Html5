@@ -31,6 +31,7 @@
             var time = t.toLocaleDateString() + '  ' + t.toLocaleTimeString();
             var message = $message.val();
             localStorage.setItem(time, message);
+            
             var item = 'Message:  ' + message + '<br/>Time:  ' + time + '<br/><br/>';
             $show_area.html($show_area.html() + item);
             $message.val('');

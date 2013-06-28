@@ -50,7 +50,7 @@
         var createConsumptionRecordTable = function () {
             db.transaction(function (tx) {
                 tx.executeSql('create table if not exists ConsumptionRecord(use TEXT,person TEXT,money DECIMAL,date TEXT,time TEXT)', [], function (tn) {
-                    alert('create success');
+                    //alert('create success');
                 });
             });
         };
@@ -100,7 +100,7 @@
 
         var init = function () {
             //dropTable('ConsumptionRecord');
-            //createConsumptionRecordTable();
+            createConsumptionRecordTable();
             //clearTable('ConsumptionRecord');
             show();
         };
