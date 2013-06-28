@@ -1,0 +1,357 @@
+<script src=fw.js></script>
+<html xmlns:v>
+<head>
+<title>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</title>
+</head>
+<style>
+v\:*{behavior:url(#default#VML)}
+body{font:12;cursor:url(cur/sc.cur);overflow:hidden;margin:0;border:none}
+table,font{font:12}
+.unit_air{filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=30, Color='#88000000', Positive='true')}
+.unit_ground{
+
+}
+.hpbar{font:0;height:5;border:1px solid black;background:#585858}
+.bd{border:1px solid red}
+a,div,img,hr,span,table{position:absolute}
+
+</style>
+<body oncontextmenu="return false" onmousemove=try{main_mousemove()}catch(e){} onresize=bdy_resize() id=bdy bgcolor =black onload ="bdy_load()" onselectstart  ="return false" ondragstart="return false">
+<div id=map_data>size,64,64;1,mine,3,1;2,mine,2,2;3,mine,3,2;4,mine,1,2;5,mine,1,4;6,mine,1,5;7,mine,1,6;8,mine,1,7;9,mine,1,8;10,mine,2,4;11,mine,4,1;12,mine,5,1;13,mine,5,2;14,mine,4,2;15,mine,2,3;16,mine,3,3;17,mine,2,5;18,mine,2,6;19,mine,1,9;20,mine,2,9;21,mine,1,10;22,ves,7,2;23,0_hq,7,6,red;24,0_scv,6,5,red;25,0_scv,7,9,red;26,0_scv,5,10,red;27,0_scv,8,11,red;28,0_marine,12,8,red;29,0_firebat,13,8,red;30,0_marine,20,14,blue;31,0_marine,21,14,blue;32,0_marine,22,14,blue;33,0_marine,20,15,blue;34,0_marine,21,15,blue;35,0_marine,22,15,blue;36,0_marine,20,16,blue;37,0_marine,21,16,blue;38,0_marine,22,16,blue;39,0_barrack,24,14,blue</div>
+<div id="divMain" onmouseup="main_mouseup()" oncontextmenu=main_rclick(event.x,event.y) onmousedown=main_mousedown() onmouseout="divMain.mx=100;divMain.my=100" style      ="OVERFLOW: hidden; WIDTH: 100%; POSITION: absolute; HEIGHT: 100%">
+<div id=divSize name="main" style="BACKGROUND: url(bg/bg1.gif); WIDTH: 100%; POSITION: absolute; HEIGHT: 100%">
+</div>
+<script>
+l="<table id=tbMap width=2560 border=1 bordercolor=black cellpadding=0 cellspacing=0 style='POSITION: absolute; BORDER-COLLAPSE: collapse'>"
+for(i=0;i<64;i++){
+	l+="<tr height=30>"
+	for(j=0;j<64;j++){
+		l+="<td width=40>&nbsp;</td>"
+	}
+	l+="</tr>"
+}
+l+="</table>"
+//document.write(l)
+</script>
+<div id=divModel style="DISPLAY: none; Z-INDEX: 255; BACKGROUND: #088008; FILTER: alpha(opacity=75); OVERFLOW: hidden">
+<IMG style="FILTER: alpha(opacity=75)" src="build/0_supply_red.gif" >
+</div>
+</div>
+<v:rect id=selRect onmouseup="main_mouseup()" style="DISPLAY: none; Z-INDEX:  255; POSITION:  absolute" coordsize = "21600,21600" strokecolor = "#10fc18"><v:fill opacity = "0" ></v:fill></v:rect>
+<div id=divSysInfo style="WIDTH: 100%; COLOR: white; TOP: 10px; TEXT-ALIGN: center">
+
+</div>
+<div id=divRes style="LEFT: 10px; COLOR: #10fc18; TOP: 10px">
+	<img align=absMiddle src="panel/mine.gif" style="POSITION: relative"> <font id=res_mine style="WIDTH: 30px"></font>
+	<img align=absMiddle src="panel/ves.gif" style="POSITION: relative"> <font id=res_ves style="WIDTH: 30px"></font>
+	<img align=absMiddle src="panel/man.gif" style="POSITION: relative"> <font id=res_supply style="WIDTH: 30px"></font>
+</div>
+<div id=divPanel style="DISPLAY: none; Z-INDEX: 256; BACKGROUND: url(panel/main.gif); WIDTH: 148px; TOP: 0px; HEIGHT: 284px">
+	<div id=mini_map onmouseup=mini_mouseup() style="LEFT: 10px; WIDTH: 128px; TOP: 20px; HEIGHT: 128px">
+		<span id=mini_range style="BORDER-RIGHT: white 1px solid; BORDER-TOP: white 1px solid; LEFT: 0px; BORDER-LEFT: white 1px solid; BORDER-BOTTOM: white 1px solid; TOP: 0px"></span>
+	</div>
+	<div id=menu_build style="DISPLAY: none; LEFT: 10px; TOP: 155px">
+		<div onclick=buildUnit(event.srcElement) style="LEFT: 4px; TOP: 4px">
+			
+		</div>
+		<div style="DISPLAY: none; BACKGROUND: url(panel/build.gif); LEFT: 1px; WIDTH: 122px; TOP: 42px; HEIGHT: 41px">
+			<IMG style="BORDER-RIGHT: #0c48cc 1px solid; BORDER-TOP: #0c48cc 1px solid; LEFT: 2px; BORDER-LEFT: #0c48cc 1px solid; BORDER-BOTTOM: #0c48cc 1px solid; TOP: 3px" onclick=cancelBuild(this) src="ico/0_scv.gif" >
+			<hr color=black size=3 style="LEFT: 48px; WIDTH: 71px; TOP: 29px">
+		</div>
+	</div>
+	<div id=menu_work style="DISPLAY: none; LEFT: 10px; TOP: 155px">
+		<div onclick='showModel(event.srcElement)' style="LEFT: 4px; TOP: 4px">
+			<IMG style="BORDER-RIGHT: #0c48cc 1px solid; BORDER-TOP: #0c48cc 1px solid; BORDER-LEFT: #0c48cc 1px solid; BORDER-BOTTOM: #0c48cc 1px solid" src="ico/0_supply.gif" name=0_supply >
+			<IMG style="BORDER-RIGHT: #0c48cc 1px solid; BORDER-TOP: #0c48cc 1px solid; LEFT: 40px; BORDER-LEFT: #0c48cc 1px solid; BORDER-BOTTOM: #0c48cc 1px solid" src="ico/0_refinery.gif" name=0_refinery>
+			<IMG style="BORDER-RIGHT: #0c48cc 1px solid; BORDER-TOP: #0c48cc 1px solid; LEFT: 80px; BORDER-LEFT: #0c48cc 1px solid; BORDER-BOTTOM: #0c48cc 1px solid" src="ico/0_barrack.gif" name=0_barrack >
+			<IMG style="BORDER-RIGHT: #0c48cc 1px solid; BORDER-TOP: #0c48cc 1px solid; FILTER: gray; BORDER-LEFT: #0c48cc 1px solid; BORDER-BOTTOM: #0c48cc 1px solid; TOP: 40px" src="ico/0_academy.gif" name=0_academy >
+		</div>
+	</div>
+	<a href="http://www.aysajan.be/" target=_blank style="LEFT: 20px; CURSOR: hand; COLOR: white; TOP: 248px">促声忝栽胎務</a>
+</div>
+<IE:DOWNLOAD ID=oload style="BEHAVIOR: url(#default#download)">
+</body>
+</html>
+<script>
+function bdy_load(){
+	fw1.iniMap(map_data.innerText)
+	divPanel.style.display=""
+	refVal()
+	bdy_resize()
+	timer_main()
+}
+function bdy_resize(){
+	divPanel.style.left=bdy.clientWidth-148
+	mini_range.style.width=bdy.clientWidth*128/2560+5
+	mini_range.style.height=bdy.clientHeight*128/1920+5
+	divSysInfo.style.top=bdy.clientHeight-100
+}
+function refVal(){
+	res_mine.innerText=race[cRace].mine
+	res_ves.innerText=race[cRace].ves
+	res_supply.innerText=race[cRace].man+"/"+race[cRace].supply
+}
+function showSysInfo(k){
+	divSysInfo.innerHTML=k
+	showObj("divSysInfo")
+	window.setTimeout("showObj(';divSysInfo')",3000)
+}
+function buildUnit(ee){
+	if(ee.tagName!="IMG")
+		return
+	if(ee.style.filter=="gray")
+		return
+	var u=eval(menu_build.name),uu=udf[ee.name]
+	if(u.mn==-1){
+		if(race[cRace].man>=race[cRace].supply){
+			showSysInfo("Not enough supply...build more supply.")
+			return
+		}
+		if(race[cRace].mine<uu.mine){
+			showSysInfo("Not enough minerals...mine more minerals.")
+			return
+		}
+		if(race[cRace].ves<uu.ves){
+			showSysInfo("Not enough Vespene gases...harvest more gas.")
+			return
+		}
+		menu_build.mine=uu.mine
+		menu_build.ves=uu.ves
+		race[cRace].mine-=uu.mine
+		race[cRace].ves-=uu.ves
+		refVal()
+		u.mn=0
+		u.bType=ee.name
+		menu_build.children(1).children(0).src="ico/"+ee.name+".gif"
+		menu_build.children(1).style.display=""
+	}
+}
+function cancelBuild(ee){
+	race[cRace].mine+=parseInt(menu_build.mine)
+	race[cRace].ves+=parseInt(menu_build.ves)
+	refVal()
+	eval(menu_build.name).mn=-1
+	menu_build.children(1).style.display="none"
+}
+function showModel(ee){
+	if(ee.tagName!="IMG")
+		return
+	if(ee.style.filter=="gray"){
+		return
+	}
+	var uu=udf[ee.name],a_wh
+	if(race[cRace].mine<uu.mine){
+		showSysInfo("Not enough minerals...mine more minerals.")
+		return
+	}
+	if(race[cRace].ves<uu.ves){
+		showSysInfo("Not enough Vespene gases...harvest more gas.")
+		return
+	}
+	divModel.children(0).src="build/"+ee.name+"_"+cRace+".gif"
+	divModel.name=ee.name
+	a_wh=uu.wh.split(",")
+	divModel.style.posWidth=a_wh[0]
+	divModel.style.posHeight=a_wh[1]
+	divModel.size=uu.size
+	divModel.movepos=uu.movepos
+	showObj("divModel")
+}
+function main_mousedown(){
+	if(event.button==2)
+		return
+	if(divModel.style.display=="none")
+		showObj("selRect")
+	selRect.style.posLeft=event.x
+	selRect.style.posTop=event.y
+	selRect.style.posWidth=selRect.style.posHeight=0
+}
+function main_mousemove(){
+	divMain.mx=event.x
+	divMain.my=event.y
+	if(typeof(selRect)=="undefined")
+		return
+	if(divModel.style.display==""){
+		var sp=new pt(parseInt((event.x+divMain.scrollLeft)/40),parseInt((event.y+divMain.scrollTop)/30))
+		var a_sz=divModel.size.split(","),a_mv=divModel.movepos.split(","),c="#088008"
+		var u=eval(fw1.selUnit)
+		fw1.setUBlock()
+		fw1.bList[2]+=u.px+","+u.py+";"
+		divModel.style.posLeft=sp.x*40+parseInt(a_mv[0])
+		divModel.style.posTop=sp.y*30+parseInt(a_mv[1])
+		divModel.pos=sp.v
+		if(divModel.name!="0_refinery"){
+			for(var i=0;i<a_sz[0];i++){
+				for(var j=0;j<a_sz[1];j++){
+					if(fw1.inBlock(new pt(sp.x+i,sp.y+j))){
+						c="#C81818"
+						break
+					}
+				}
+			}
+		}
+		else{
+			if((";"+sys.vesPos+";").indexOf(";"+sp.v+";")==-1){
+				c="#C81818"
+			}
+			else{
+				var spu=fw1.uInPos(sp),spu_name=spu==null ? "" : spu.name
+				if(spu_name!="ves")
+					c="#C81818"
+			}
+		}
+		divModel.style.background=c
+	}
+	if(selRect.style.display==""){
+		selRect.style.posWidth=event.x-selRect.style.posLeft
+		selRect.style.posHeight=event.y-selRect.style.posTop
+	}
+}
+function main_mouseup(){
+	if(event.button==2)
+		return
+	if(divModel.style.display==""){
+		if(divModel.style.background=="#c81818"){
+			showSysInfo(divModel.name=="0_refinery" ? "Could not build there,find a Vespene to build on." : "You can't build there.")
+			return
+		}
+		race[cRace].mine-=udf[divModel.name].mine
+		race[cRace].ves-=udf[divModel.name].ves
+		refVal()
+		fw1.iniMap(fw1.maxID+","+divModel.name+","+divModel.pos+","+cRace+",0")
+		showObj(";divModel")
+		main_rclick(event.x,event.y)
+		return
+	}
+	var sp=new pt(parseInt((selRect.style.posLeft+divMain.scrollLeft)/40),parseInt((selRect.style.posTop+divMain.scrollTop)/30))
+	var ep=new pt(parseInt((selRect.style.posLeft+divMain.scrollLeft+selRect.style.posWidth)/40),parseInt((selRect.style.posTop+divMain.scrollTop+selRect.style.posHeight)/30))
+	fw1.selRange(sp,ep)
+	showObj(";selRect,menu_build,menu_work,divModel")
+	if(fw1.selUnit!=""&&fw1.selUnit.indexOf(",")==-1){
+		var u=eval(fw1.selUnit),uu=udf[u.name],l="",a,i
+		if(u.uType=="build"&&u.bn==-1&&u.race==cRace){
+			showObj("menu_build")
+			menu_build.name=u.id
+			if(uu.madelist!=null){
+				a=uu.madelist.split(",")
+				for(i in a){
+					f=""
+					if((a[i]=="0_firebat"||a[i]=="0_medic")&&race[cRace].keyBuild.indexOf(",0_academy,")==-1)
+						f="filter:gray;"
+					l+="<img name='"+a[i]+"' src='ico/"+a[i]+".gif' style='"+f+";left:"+(40*i)+";border:1px solid #0c48cc'>"
+				}
+			}
+			menu_build.children(0).innerHTML=l
+			if(u.mn==-1)
+				showObj(";menu_build.children(1)")
+			else{
+				menu_build.children(1).children(0).src="ico/"+u.bType+".gif"
+				showObj("menu_build.children(1)")
+			}
+		}
+		if(u.name=="0_scv"){
+			showObj("menu_work")
+		}
+	}
+	return
+}
+function main_rclick(ex,ey){
+	var u,o,ep=new pt(parseInt((ex+divMain.scrollLeft)/40),parseInt((ey+divMain.scrollTop)/30))
+	if(fw1.selUnit=="")
+		return
+	if(fw1.selUnit.indexOf(",")==-1){
+		u=eval(fw1.selUnit)
+		if(u.uType!="unit"||u.race!=cRace)
+			return
+	}
+	if(divModel.style.display==""){
+		showObj(";divModel")
+			return
+	}
+	fw1.go(ep)
+	if(fw1.selUnit.indexOf(",")==-1){
+		u=eval(fw1.selUnit)
+		if(u.name=="0_scv"){
+			o=fw1.uInPos(ep)
+			if(o!=null){
+				if(o.bn>-1){
+					u.task="build"
+					u.aimu=o.id
+				}
+			}
+		}
+	}
+	return
+}
+function mini_mouseup(){
+	var p=new pt(event.x-divPanel.style.posLeft-10,event.y-20)
+	if(event.button==1){
+		divMain.scrollLeft=p.x*20-bdy.clientWidth/2
+		divMain.scrollTop=p.y*15-bdy.clientHeight/2
+	}
+	if(event.button==2){
+		p.setv(parseInt(p.x)/2,parseInt(p.y/2))
+		fw1.go(p)
+	}
+}
+function timer_main(){
+	if(divMain.mx<10)
+		divMain.scrollLeft-=12
+	if(divMain.mx>divMain.clientWidth-10)
+		divMain.scrollLeft+=12
+	if(divMain.my<10)
+		divMain.scrollTop-=12
+	if(divMain.my>divMain.clientHeight-10)
+		divMain.scrollTop+=12
+	mini_range.style.posLeft=divMain.scrollLeft*120/divSize.style.posWidth
+	mini_range.style.posTop=divMain.scrollTop*120/divSize.style.posHeight
+	var ol=fw1.uList[2].split(","),u,o,rv,i,sp=new pt()
+	for(i=0;i<ol.length;i++){
+		u=eval(ol[i])
+		if(u.mn==-1){
+			per=u.chp*100/u.hp
+			if(per<=0){
+				fw1.delUnit(u)
+				continue
+			}
+			if(per<75&&u.children(2).innerHTML=="")
+				u.children(2).innerHTML="<img src=build/fire.gif style=left:20;top:20>"
+			u.children(0).children(1).children(0).style.width=per+"%"
+		}
+		if(u.mn>-1){
+			u.mn++
+			if(menu_build.name==u.id&&menu_build.style.display==""){
+				o=menu_build.children(1).children(1)
+				o.style.posLeft=48+u.mn/4
+				o.style.posWidth=119-o.style.posLeft
+			}
+		}
+		if(u.mn>=300){
+			u.mn=-1
+			sp.setv(parseInt(u.px)+parseInt(u.pw/2),parseInt(u.py)+parseInt(u.ph/2))
+			fw1.cEndPos=0
+			fw1.setUBlock()
+			rv=fw1.getEndPos(sp)
+			sp.setv(rv[0])
+			fw1.iniMap(fw1.maxID+","+u.bType+","+sp.v+","+cRace)
+			race[cRace].man++
+			refVal()
+			if(menu_build.style.display=="")
+				menu_build.children(1).style.display="none"
+		}
+	}
+	var ol=fw1.uList[3].split(",")
+	for(i=0;i<ol.length;i++){
+		u=eval(ol[i])
+		fw1.move(u)
+		per=u.chp*100/u.hp
+		if(per<=0){
+			fw1.delUnit(u)
+			fw1.searchEnemy()
+		}
+		else
+			u.children(0).children(1).children(0).style.width=per+"%"
+	}
+	window.setTimeout("timer_main()",10)
+}
+</script>

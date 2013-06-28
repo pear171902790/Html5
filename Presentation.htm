@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://html5slides.googlecode.com/svn/trunk/template/index.html#17 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Presentation</title>
+
+    <meta charset="utf-8">
+    <script type="text/javascript"> 
+	var c=document.getElementById("myCanvas"); 
+	var cxt=c.getContext("2d"); 
+	cxt.fillStyle="#FF0000"; 
+	cxt.fillRect(0,0,150,75); 
+</script>
+
+    <script src="./Presentation_files/slides.js"></script><link type="text/css" rel="stylesheet" href="data:text/css,">
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    
+    
+  </style><meta name="viewport" content="width=1100,height=750"><meta name="apple-mobile-web-app-capable" content="yes"></head>
+  
+  
+
+  <body style="display: none" class="loaded">
+
+    <section class="slides layout-regular template-default">
+      
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+        
+        
+      
+      <article class="biglogo">
+      	
+      <p>
+      	javascript演示：</p>
+      <p> <a href="Presentation_files/matrix.htm" title="黑客帝国" target="_blank">黑客帝国</a>		</p>
+      <p><a href="Presentation_files/javascript_星际争霸完整版_代码/xingji/index.htm" title="星球大战" target="_blank">星球大战</a>
+      </p>
+	  <p>
+      		歌曲测试      	</p>
+<audio controls="controls"> 
+				<source src="song.ogg" type="audio/ogg">
+ 				<source src="110阿彌陀佛在心間.mp3" type="audio/mpeg"> Your browser does not support the audio tag.		</audio>
+      </article>
+
+      <article class="">
+	  <center>
+        <h1>
+		
+          HTML5
+          <br>
+          概述        </h1>
+        <p>
+          软件0902 贺祺 刘伟业 凌月枫 郑虞
+          <br>
+          2012年4月27日        </p>
+		</center>
+      </article>
+      
+      <article class="">
+        <h3>
+        	主要内容有：
+          （O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O O(∩_∩)O）        </h3>
+        <ul>
+        	
+          <li>
+            发展历程          </li>
+          <li>
+            浏览器          </li>
+          <li>
+            多媒体元素          </li>
+          <li>
+            总结          </li>
+        </ul>
+      </article>
+      
+       <article class="fill far-past">
+        <h3>
+          Web技术大致的时间轴        </h3>
+        <p>
+          <img src="./Presentation_files/html12345.png" height="100" width="400">        </p>
+        <div class="source white">
+          Source: Eric Schmidt        </div>
+      </article>
+      
+      <article class="">
+      	<h3>
+      		HTML5的来历      	</h3>
+        <p>
+          HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。</br>
+
+HTML5 是 W3C 与 WHATWG 合作的结果。</br>
+W3C 指 World Wide Web Consortium，万维网联盟。</br>
+ W3C 专注于 XHTML 2.0</br>
+WHATWG 指 Web Hypertext Application Technology Working Group。</br>
+WHATWG 致力于 web 表单和应用程序</br>
+        </p>
+        <p>
+      在 2006 年，双方决定进行合作，来创建一个新版本的 HTML。      </article>
+
+      <article class="">
+        <h3>
+          HTML5的规则        </h3>
+        <p>
+          为 HTML5 建立的一些规则：</br>
+新特性应该基于 HTML、CSS、DOM 以及 JavaScript。</br>
+减少对外部插件的需求（比如 Flash）</br>
+更优秀的错误处理</br>
+更多取代脚本的标记</br>
+HTML5 应该独立于设备</br>
+开发进程应对公众透明</br>
+        </p>
+        <p>
+          There is more text just underneath with a <code>code sample: 5px</code>.        </p>
+      </article>
+      
+       <article class="">
+        <h3>
+          HTML5的新特性        </h3>
+        <ul class="build">
+          <li class="">
+            HTML5 中的一些有趣的新特性：          </li>
+          <li class="">
+            用于绘画的 canvas 元素          </li>
+          <li class="">
+            用于媒介回放的 video 和 audio 元素          </li>
+          <li class="">
+            对本地离线存储的更好的支持          </li>
+          <li class="">
+            新的特殊内容元素，比如 article、footer、header、nav、section          </li>
+          <li class="">
+            新的表单控件，比如 calendar、date、time、email、url、search          </li>
+        </ul>
+         <div class="build">
+          <p class="">......等等。。。。</p>
+          <p class="">感兴趣的自己去图书馆翻书去吧，新书借阅那里有的~^_^</p>
+        </div>
+      </article>
+
+      <article class="smaller">
+        <h3>
+          浏览器对HTML5的支持        </h3>
+        <p>
+最新版本的 <br>
+	Safari、Chrome、Firefox <br>
+	以及 Opera 支持某些 HTML5 特性。<br>
+	Internet Explorer 9 将支持某些 HTML5 特性。<br>
+        </p>
+        <p>
+          支持HTML5是一个趋势<code>code sample: 5px</code>.        </p>
+      </article>
+      
+      <article class="">
+        <h3>
+          浏览器分类简介        </h3>
+        <p>
+          <img class="centered" style="height: 500px" src="./Presentation_files/browser.jpg">        </p>
+        <div class="source">
+          Source: Larry Page        </div>
+      </article>
+
+      <article class="smaller">
+        <h3>
+          浏览器分类简介        </h3>
+        <ul>
+          <li>
+            按内核分类：          </li><li>
+            Trident：又称为MSHTML，代表Internet Explorer
+          </li><li>
+            其他：Maxthon遨游、世界之窗、腾讯TT、Netcapter、Avant等等，但Trident只能应用于Windows平台，且是不开源的
+          </li><li>
+            Gecko：代表作品Mozilla Firefox	 Netscape6至9
+          </li><li>
+        	能在Microsoft Windows、Linux和MacOS X等主要操作系统上运行
+        	</li><li>
+        	WebKit：代表作品Safari、Chrome
+        	</li><li>
+        	Presto：代表作品Opera
+        </li></ul>
+      </article>
+      
+      <article class="">
+        <h3>
+          测试浏览器对HTML5的支持        </h3>
+      	<h4>
+      		测试网站：HTML Test  总分300分
+					一：外国列强		</h4>
+				<h4>
+					一：外国列强				</h4>
+				
+
+        <p>
+          <img src="./Presentation_files/htmlTest1.jpg" width="811" height="326" >        </p>
+        <div class="source">
+          Source: Sergey Brin        </div>
+      </article>
+      
+      <article class="">
+      	<h3>
+          测试浏览器对HTML5的支持        </h3>
+      	<h4>
+      		二：国产代表		</h4>
+        <p>
+          <img style="height: 500px" src="./Presentation_files/htmlTest2.jpg">        </p>
+        <div class="source">
+          Source: Sergey Brin        </div>
+      </article>
+      
+      <article class="">
+      	<h3>
+          测试浏览器对HTML5的支持        </h3>
+      	<h4>
+      		三、非正式版		</h4>
+        <p>
+          <img style="height: 500px" src="./Presentation_files/htmlTest3.jpg">        </p>
+        <div class="source">
+          Source: Sergey Brin        </div>
+      </article>
+	  
+	  <article class="">
+      	<h3>
+         浏览器支持HTML5的元素属性        </h3>
+        <p>
+          <img src="./Presentation_files/protyple.png" width="786" height="507" style="height: 500px">        </p>
+        <div class="source">
+          Source: Sergey Brin        </div>
+      </article>
+
+
+<article class="">
+        <h3>
+          测试浏览器对HTML5的支持        </h3>
+        <p>
+       总结：</br>
+　测试了4款国外的非IE浏览器，3款国内的双核浏览器，整体表现外国强豪毫无疑问的领先， 高分段集中在Chrome和Safari身上，Opera占据了中层分数段，但是国产浏览器傲游3.0的还不是很落后。</br>
+Apple：http://www.apple.com/html5/</br>
+			其他浏览器与狗不得入内，只允许用Safari</br>
+Google：http://www.html5rocks.com/</br>
+        </p>
+        <p>
+          There is more text just underneath with a <code>code sample: 5px</code>.        </p>
+      </article>
+      
+      <article class="fill far-past">
+      	<h3>
+          新增的一些HTML5的元素属性        </h3>
+      	<h4>
+      		HTML5 New Input Types		</h4>
+        <p>
+          <img src="./Presentation_files/broserSupporter.png" width="873" height="499" style="height: 500px">        </p>
+        <div class="source">
+          Source: Sergey Brin        </div>
+      </article>
+      
+      <article class="">
+        <h3>
+          Input TypeExample        </h3>
+        <p>
+        	E-mail: <input type="email" name="user_email" /></br>
+        	
+					URL: <input type="url" name="user_url" /></br>
+					
+					number : <input type="number" name="points" min="1" max="10" /></br>
+					Number属性：max,min,step,value</br>
+
+					Range :<input type="range" name="points" min="1" max="10" /></br>
+					Range属性： max,min,step,value</br>
+        </p>
+        <p>
+          There is some html5 code: <code>code sample: 5px</code>.        </p>
+      </article>
+      
+     <article class="">
+        <h3>
+          Date Pickers-Exam        </h3>
+        <p>
+        Date: <input type="date" name="user_date" /></br>
+					Month: <input type="month" name="user_date" /></br>
+					Week: <input type="week" name="user_date" /></br>
+					Time: <input type="time" name="user_date" /></br>
+					datetime (UTC time) : <input type="datetime" name="user_date" /></br>
+					datetime-local : <input type="datetime-local" name="user_date" /> (UTC time)</br>
+        </p>
+        <p>
+          There is some html5 code: <code>code sample: 5px</code>.        </p>
+      </article>
+      
+       <article class="">
+        <h3>
+          Input Type - search        </h3>
+        <p>
+        <form action="http://www.google.com/search" method="get">
+ 				<label>Google: <input type="search" name="q"></label> <input type="submit" value="Search...">
+		 </form>
+					<form action="http://www.bing.com/search" method="get">
+ 						<label>Bing: <input type="search" name="q"></label> <input type="submit" value="Search...">
+					</form>
+
+        </p>
+        <p>
+          There is some html5 code: <code>code sample: 5px</code>.        </p>
+      </article>
+      
+      <article class="">
+        <h3>
+          Video标签属性        </h3>
+        <p>
+          <img src="./Presentation_files/video.png" width="753" height="464" class="centered">        </p>
+        <div class="source">
+          Source: Larry Page        </div>
+      </article>
+
+ <article class="smaller">
+        <h3>
+          Video Example        </h3>
+        <p>
+Ogg 文件，适用于Firefox、Opera 以及 Chrome 浏览器</br>
+要确保适用于 Safari 浏览器，视频文件必须是 MPEG4 类型</br>
+Internet Explorer 8 不支持 video 元素。在 IE 9 中，将提供对使用 MPEG4 的 video 元素的支持</br>
+video 元素允许多个 source 元素。source 元素可以链接不同的视频文件。浏览器将使用第一个可识别的格式</br>
+        </p>
+        <p>
+          支持HTML5是一个趋势<code>code sample: 5px</code>.        </p>
+      </article>
+      
+       <article class="smaller">
+        <h3>
+          HTML 5 音频        </h3>
+        <p>
+直到现在，仍然不存在一项旨在网页上播放音频的标准。今天，大多数音频是通过插件（比如 Flash）来播放的。然而，并非所有浏览器都拥有同样的插件。</br>
+HTML5 规定了一种通过 audio 元素来包含音频的标准方法。</br>
+audio 元素能够播放声音文件或者音频流。</br>
+        </p>
+        <p>
+          支持HTML5是一个趋势<code>code sample: 5px</code>.        </p>
+      </article>
+      
+       <article class="">
+        <h3>
+          Audio Example        </h3>
+        <p>
+          <img src="./Presentation_files/audio.png" width="819" height="153" class="centered">        </p>
+        <p>
+        	<code><audio src="song.ogg" controls="controls"> </audio></code>.
+        	
+control 属性供添加播放、暂停和音量控件。        </P>
+        <div class="source">
+          Source: Larry Page        </div>
+      </article>
+      
+      <article class="smaller">
+        <h3>
+          Audio Example        </h3>
+        <p>
+<audio src=“song.ogg” controls=“controls“>浏览器不支持 </audio><br>
+<audio> 与 </audio> 之间插入的内容是供不支持 audio 元素的浏览器显示的。<br>
+上面的例子使用一个 Ogg 文件，适用于Firefox、Opera 以及 Chrome 浏览器。要确保适用于 Safari 浏览器，音频文件必须是 MP3 或 Wav 类型。<br>
+<audio>也支持多个source，但会使用第一个识别的格式。<br>
+        </p>
+        <p>
+          支持HTML5是一个趋势<code>code sample: 5px</code>.        </p>
+      </article>
+      
+       <article class="smaller">
+        <h3>
+          HTML 5 Canvas        </h3>
+        <p>
+canvas 元素用于在网页上绘制图形。<br>
+HTML5 的 canvas 元素使用 JavaScript 在网页上绘制图像。<br>
+画布是一个矩形区域，您可以控制其每一像素。<br>
+canvas 拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。<br>
+        </p>
+        <p>
+          支持HTML5是一个趋势<code>code sample: 5px</code>.        </p>
+      </article>
+
+      <article class="">
+        <h3>
+          Canvas        </h3>
+        
+        <canvas width="800" height="450"></canvas>  
+<script>  
+ var canvas = document.getElementsByTagName('canvas')[0];  
+ canvas.addEventListener('mousemove', onMouseMove, false);  
+ canvas.addEventListener('mousedown', onMouseDown, false);  
+ canvas.addEventListener('mouseup', onMouseUp, false);  
+  
+ var context = canvas.getContext('2d');  
+ var linex = new Array();  
+ var liney = new Array();  
+ var linen = new Array();  
+  
+ var lastX = -1;  
+ var lastY = -1;  
+ var hue = 0;  
+ var flag = 0;  
+  
+ function onMouseMove(evt) {  
+    if (flag == 1) {  
+       linex.push(evt.layerX);  
+       liney.push(evt.layerY);  
+       linen.push(1);  
+       context.save();  
+       context.translate(context.canvas.width/2, context.canvas.height/2);  
+       context.translate(-context.canvas.width/2, -context.canvas.height/2);  
+       context.beginPath();  
+       context.lineWidth = 5 + Math.random() * 10;  
+  
+       for (var i=1;i<linex.length;i++) {  
+             lastX = linex[i];  
+             lastY = liney[i];  
+             if (linen[i] == 0) {  
+                context.moveTo(lastX,lastY);  
+             } else {  
+                context.lineTo(lastX,lastY);  
+             }  
+       }  
+  
+       hue = hue + 10 * Math.random();  
+       context.strokeStyle = 'hsl(' + hue + ', 50%, 50%)';  
+       context.shadowColor = 'white';  
+       context.shadowBlur = 10;  
+       context.stroke();  
+       context.restore();  
+    }  
+ }  
+ function onMouseDown(evt) {  
+    flag = 1;  
+    linex.push(evt.layerX);  
+    liney.push(evt.layerY);  
+    linen.push(0);  
+ }  
+ function onMouseUp(evt) {  
+    flag = 0;  
+     linex.push(evt.layerX);  
+     liney.push(evt.layerY);  
+    linen.push(0);  
+ }  
+</script> 
+      </article>
+      
+       <article class="">
+        <h3>
+          Html5是什么东东？        </h3>
+        <p>
+          <img src="./Presentation_files/图片1.jpg" width="805" height="457" class="centered" style="height: 500px">        </p>
+        <div class="source">
+          Source: Larry Page        </div>
+      </article>
+      
+      <article class="">
+        <h3>
+          Html5是什么东东？        </h3>
+        <p>
+          <img src="./Presentation_files/图片2.jpg" width="798" height="454" class="centered" style="height: 500px">        </p>
+        <div class="source">
+          Source: Larry Page        </div>
+      </article>
+      
+      <article class="">
+        <h3>
+          Styles        </h3>
+        <ul>
+          <li>
+            <span class="red">class="red"</span>          </li><li>
+            <span class="blue">class="blue"</span>
+          </li><li>
+            <span class="green">class="green"</span>
+          </li><li>
+            <span class="yellow">class="yellow"</span>
+          </li><li>
+            <span class="black">class="black"</span>
+          </li><li>
+            <span class="white">class="white"</span>
+          </li><li>
+            <b>bold</b> and <i>italic</i>
+        </li></ul>
+      </article>
+      
+      <article class="">
+        <h2>
+          Segue slide        </h2>
+      </article>  
+
+      <article class="past">
+        <h3>
+          This slide has some code        </h3>
+        <section>
+        <pre class="prettyprint"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">'text/javascript'</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="com">// Say hello world until the user starts questioning</span><span class="pln">
+  </span><span class="com">// the meaningfulness of their existence.</span><span class="pln">
+  </span><span class="kwd">function</span><span class="pln"> helloWorld</span><span class="pun">(</span><span class="pln">world</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">var</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">42</span><span class="pun">;</span><span class="pln"> </span><span class="pun">--</span><span class="pln">i </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      alert</span><span class="pun">(</span><span class="str">'Hello '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="typ">String</span><span class="pun">(</span><span class="pln">world</span><span class="pun">));</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="tag">&lt;/script&gt;</span><span class="pln">
+</span><span class="tag">&lt;style&gt;</span><span class="pln">
+  p </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> pink </span><span class="pun">}</span><span class="pln">
+  b </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> blue </span><span class="pun">}</span><span class="pln">
+  u </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'umber'</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="tag">&lt;/style&gt;</span></pre>
+        </section>
+      </article>
+      
+      <article class="smaller current">
+        <h3>
+          This slide has some code (small font)        </h3>
+        <section>
+        <pre class="prettyprint"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">'text/javascript'</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="com">// Say hello world until the user starts questioning</span><span class="pln">
+  </span><span class="com">// the meaningfulness of their existence.</span><span class="pln">
+  </span><span class="kwd">function</span><span class="pln"> helloWorld</span><span class="pun">(</span><span class="pln">world</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">var</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">42</span><span class="pun">;</span><span class="pln"> </span><span class="pun">--</span><span class="pln">i </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      alert</span><span class="pun">(</span><span class="str">'Hello '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="typ">String</span><span class="pun">(</span><span class="pln">world</span><span class="pun">));</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="tag">&lt;/script&gt;</span><span class="pln">
+</span><span class="tag">&lt;style&gt;</span><span class="pln">
+  p </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> pink </span><span class="pun">}</span><span class="pln">
+  b </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> blue </span><span class="pun">}</span><span class="pln">
+  u </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'umber'</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="tag">&lt;/style&gt;</span></pre>
+        </section>
+      </article>
+      
+      <article class="next">
+        <q>
+          The best way to predict the future is to invent it.        </q>
+        <div class="author">
+          Alan Kay        </div>
+      </article>
+      
+      <article class="smaller far-next">
+        <q>
+          A distributed system is one in which the failure of a computer 
+          you didn’t even know existed can render your own computer unusable.        </q>
+        <div class="author">
+          Leslie Lamport        </div>
+      </article>
+      
+       <article class="">
+        <h3>
+          HTML5讲毕        </h3>
+         <div class="build">
+          <p class=""><img src="./Presentation_files/IMG_7289.gif" width="130" height="200" class="centered"></p>
+          <p class="">Thank you! </p>
+          <p class="">没东西了 散了吧~ </p>
+        </div>
+      </article>
+      
+      <article>
+        <h3>
+          Thank you!        </h3>
+		  <h3>
+          没东西了 散了吧~        </h3>
+		  <p>
+          <img src="./Presentation_files/IMG_7289.gif" width="367" height="399" class="centered" style="height: 500px">        </p>
+      </article>
+
+    <div class="slide-area" id="prev-slide-area"></div><div class="slide-area" id="next-slide-area"></div></section>
+
+  
+
+<link rel="stylesheet" type="text/css" href="./Presentation_files/css"><link rel="stylesheet" type="text/css" href="./Presentation_files/styles.css"><script type="text/javascript" src="./Presentation_files/prettify.js"></script></body></html>
