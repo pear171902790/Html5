@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<a xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <ol id="showData" style="font-size: 15px;">
+        
+
+    </ol>
+    <a href="index.html">index</a>
+<script>
+    var local = window.localStorage;
+    var consumptionsStr = local.getItem('consumptions');
+    if (consumptionsStr) {
+        var consumptions = JSON.parse(consumptionsStr);
+        for (var i = 0; i < consumptions.length; i++) {
+            var consumption = consumptions[i];
+            var html = fillList(consumption.use, consumption.money, consumption.person, consumption.date);
+            $('#showData').html($('#showData').html()+html);
+        }
+    }
+    function fillList(use,money,person,date) {
+        return '<li style="border-bottom:1px solid gray"><ul style="list-style: none;font-size: 15px;"><li>用途：' + use + '</li><li>金额：' + money + '</li><li>消费者：' + person + '</li><li>日期：' + date + '</li></ul></li>';
+    }
+</script>
+</body>
+</html>

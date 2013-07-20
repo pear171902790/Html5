@@ -1,0 +1,5 @@
+D:\work\Html5\PhoneGap\bin\PhoneGap.dll
+D:\work\Html5\PhoneGap\bin\PhoneGap.pdb
+D:\work\Html5\PhoneGap\obj\Debug\PhoneGap.csprojResolveAssemblyReference.cache
+D:\work\Html5\PhoneGap\obj\Debug\PhoneGap.dll
+D:\work\Html5\PhoneGap\obj\Debug\PhoneGap.pdb

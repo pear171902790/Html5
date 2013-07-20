@@ -1,0 +1,2 @@
+<import file="${sdk.dir}/tools/ant/build.xml" as="imported" />
+<target name="install" depends="-set-debug-files,imported.install" />

@@ -1,0 +1,1160 @@
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe devices
+____________________
+</DW>
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+List of devices attached 
+emulator-5554	device
+
+WARNING: no icon was specified in app settings. using default.
+WARNING: no splash screen was specified in app settings. using default.
+正在为 Android 仿制种子应用程序
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\droidGap.bat "C:\Program Files (x86)\Adobe\Adobe Dreamweaver CS5.5\Configuration\NativeAppFramework\DWPhoneGap\android\PhoneGapApp" "PhoneGap" com.company.phonegap 1.0 "E:\adt-bundle-windows-x86_64-20130522\sdk"
+____________________
+</DW>
+DUsing latest target: 1
+Created project directory: D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\src\com\company\phonegap
+Added file D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\src\com\company\phonegap\DefaultActivity.java
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\bin
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\libs
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res\values
+Added file D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res\values\strings.xml
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res\layout
+Added file D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res\layout\main.xml
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res\drawable-xhdpi
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res\drawable-hdpi
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res\drawable-mdpi
+Created directory D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\res\drawable-ldpi
+Added file D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\AndroidManifest.xml
+Added file D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\build.xml
+Added file D:\work\Html5\apk\com.company.phonegap_Android\com.company.phonegap\proguard-project.txt
+CLONE SUCCESSFUL
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.0.1
+ [checkenv] Installed at E:\adt-bundle-windows-x86_64-20130522\sdk
+
+-setup:
+     [echo] Project Name: phonegap
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 17.0.0
+     [echo] Resolving Build Target for phonegap...
+[gettarget] Project Target:   Android 4.2.2
+[gettarget] API level:        17
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\res
+    [mkdir] Created dir: D:\work\Html5\apk\COMCOM~1.PHO\gen
+    [mkdir] Created dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+    [mkdir] Created dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for phonegap...
+[dependency] Library dependencies:
+[dependency] No Libraries
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 3 source files to D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Pre-Dexing D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar -> phonegap-4217d868e11abf8247baeaa4c51549c2.jar
+      [dex] Converting compiled files and external libraries into D:\work\Html5\apk\COMCOM~1.PHO\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2.4KiB) with dex B (60 defs/124.7KiB). Result is 68 defs/155.2KiB. Took 0.1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: D:\work\Html5\apk\COMCOM~1.PHO\res
+   [crunch] To destination dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\res
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-hdpi\ic_launcher.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\ic_launcher.png: 87% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-hdpi\icon.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-hdpi\splash.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\splash.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\splash.png: 45% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-ldpi\ic_launcher.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\ic_launcher.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-ldpi\icon.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-ldpi\splash.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\splash.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\splash.png: 45% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-mdpi\ic_launcher.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\ic_launcher.png: 78% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-mdpi\icon.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-mdpi\splash.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\splash.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\splash.png: 45% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-xhdpi\ic_launcher.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-xhdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-xhdpi\ic_launcher.png: 85% size of source)
+   [crunch] Crunched 10 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating phonegap-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk
+[propertyfile] Creating new property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+正在将应用程序安装到 Android 模拟器中
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat install
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+install:
+     [echo] Install file not specified.
+     [echo] 
+     [echo] 'ant install' now requires the build target to be specified as well.
+     [echo] 
+     [echo] 
+     [echo]     ant debug install
+     [echo]     ant release install
+     [echo]     ant instrument install
+     [echo] This will build the given package and install it.
+     [echo] 
+     [echo] Alternatively, you can use
+     [echo]     ant installd
+     [echo]     ant installr
+     [echo]     ant installi
+     [echo]     ant installt
+     [echo] to only install an existing package (this will not rebuild the package.)
+
+BUILD FAILED
+E:\adt-bundle-windows-x86_64-20130522\sdk\tools\ant\build.xml:1357: The following error occurred while executing this line:
+E:\adt-bundle-windows-x86_64-20130522\sdk\tools\ant\build.xml:1424: No message
+
+Total time: 0 seconds
+正在 Android 模拟器中运行应用程序
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\ANDROI~2.BAT com.company.phonegap E:\adt-bundle-windows-x86_64-20130522\sdk
+____________________
+</DW>
+Starting: Intent { act=android.intent.action.MAIN cmp=com.company.phonegap/.DefaultActivity }
+
+Error type 3
+
+Error: Activity class {com.company.phonegap/com.company.phonegap.DefaultActivity} does not exist.
+
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe kill-server
+____________________
+</DW>
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe devices
+____________________
+</DW>
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+List of devices attached 
+emulator-5554	offline
+
+WARNING: no icon was specified in app settings. using default.
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.0.1
+ [checkenv] Installed at E:\adt-bundle-windows-x86_64-20130522\sdk
+
+-setup:
+     [echo] Project Name: phonegap
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 17.0.0
+     [echo] Resolving Build Target for phonegap...
+[gettarget] Project Target:   Android 4.2.2
+[gettarget] API level:        17
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: D:\work\Html5\apk\COMCOM~1.PHO\bin
+    [mkdir] Created dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\res
+    [mkdir] Created dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+    [mkdir] Created dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for phonegap...
+[dependency] Library dependencies:
+[dependency] No Libraries
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 3 source files to D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Pre-Dexing D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar -> phonegap-4217d868e11abf8247baeaa4c51549c2.jar
+      [dex] Converting compiled files and external libraries into D:\work\Html5\apk\COMCOM~1.PHO\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2.4KiB) with dex B (60 defs/124.7KiB). Result is 68 defs/155.2KiB. Took 0.1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: D:\work\Html5\apk\COMCOM~1.PHO\res
+   [crunch] To destination dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\res
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-hdpi\ic_launcher.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\ic_launcher.png: 87% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-hdpi\icon.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\icon.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-hdpi\splash.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\splash.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-hdpi\splash.png: 45% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-ldpi\ic_launcher.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\ic_launcher.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-ldpi\icon.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\icon.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-ldpi\splash.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\splash.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-ldpi\splash.png: 45% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-mdpi\ic_launcher.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\ic_launcher.png: 78% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-mdpi\icon.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\icon.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bi
+   [crunch] n\res\drawable-mdpi\icon.png: 0% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-mdpi\splash.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\splash.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-mdpi\splash.png: 45% size of source)
+   [crunch] Processing image to cache: D:\work\Html5\apk\COMCOM~1.PHO\res\drawable-xhdpi\ic_launcher.png => D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-xhdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry D:\work\Html5\apk\COMCOM~1.PHO\bin\res\drawable-xhdpi\ic_launcher.png: 85% size of source)
+   [crunch] Crunched 10 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating phonegap-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk
+[propertyfile] Creating new property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+正在将应用程序安装到 Android 模拟器中
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat install
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+imported.install:
+     [echo] Installing D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk onto default emulator or device...
+     [exec] 	pkg: /data/local/tmp/phonegap-debug.apk
+     [exec] Success
+     [exec] 1105 KB/s (176548 bytes in 0.156s)
+
+install:
+
+BUILD SUCCESSFUL
+Total time: 17 seconds
+正在 Android 模拟器中运行应用程序
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\ANDROI~2.BAT com.company.phonegap E:\adt-bundle-windows-x86_64-20130522\sdk
+____________________
+</DW>
+Starting: Intent { act=android.intent.action.MAIN cmp=com.company.phonegap/.DefaultActivity }
+
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe kill-server
+____________________
+</DW>
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe devices
+____________________
+</DW>
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+List of devices attached 
+emulator-5554	device
+
+WARNING: no icon was specified in app settings. using default.
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.0.1
+ [checkenv] Installed at E:\adt-bundle-windows-x86_64-20130522\sdk
+
+-setup:
+     [echo] Project Name: phonegap
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 17.0.0
+     [echo] Resolving Build Target for phonegap...
+[gettarget] Project Target:   Android 4.2.2
+[gettarget] API level:        17
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for phonegap...
+[dependency] Library dependencies:
+[dependency] No Libraries
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Using Pre-Dexed phonegap-4217d868e11abf8247baeaa4c51549c2.jar <- D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\work\Html5\apk\COMCOM~1.PHO\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2.4KiB) with dex B (60 defs/124.7KiB). Result is 68 defs/155.2KiB. Took 0.1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: D:\work\Html5\apk\COMCOM~1.PHO\res
+   [crunch] To destination dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating phonegap-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+正在将应用程序安装到 Android 模拟器中
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat install
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+imported.install:
+     [echo] Installing D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk onto default emulator or device...
+     [exec] 	pkg: /data/local/tmp/phonegap-debug.apk
+     [exec] Success
+     [exec] 60 KB/s (177098 bytes in 2.879s)
+
+install:
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+正在 Android 模拟器中运行应用程序
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\ANDROI~2.BAT com.company.phonegap E:\adt-bundle-windows-x86_64-20130522\sdk
+____________________
+</DW>
+Starting: Intent { act=android.intent.action.MAIN cmp=com.company.phonegap/.DefaultActivity }
+
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe kill-server
+____________________
+</DW>
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe devices
+____________________
+</DW>
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+List of devices attached 
+emulator-5554	device
+
+WARNING: no icon was specified in app settings. using default.
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.0.1
+ [checkenv] Installed at E:\adt-bundle-windows-x86_64-20130522\sdk
+
+-setup:
+     [echo] Project Name: phonegap
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 17.0.0
+     [echo] Resolving Build Target for phonegap...
+[gettarget] Project Target:   Android 4.2.2
+[gettarget] API level:        17
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for phonegap...
+[dependency] Library dependencies:
+[dependency] No Libraries
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Using Pre-Dexed phonegap-4217d868e11abf8247baeaa4c51549c2.jar <- D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\work\Html5\apk\COMCOM~1.PHO\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2.4KiB) with dex B (60 defs/124.7KiB). Result is 68 defs/155.2KiB. Took 0.1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: D:\work\Html5\apk\COMCOM~1.PHO\res
+   [crunch] To destination dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating phonegap-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+正在将应用程序安装到 Android 模拟器中
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat install
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+imported.install:
+     [echo] Installing D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk onto default emulator or device...
+     [exec] 	pkg: /data/local/tmp/phonegap-debug.apk
+     [exec] Success
+     [exec] 105 KB/s (177103 bytes in 1.643s)
+
+install:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+正在 Android 模拟器中运行应用程序
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\ANDROI~2.BAT com.company.phonegap E:\adt-bundle-windows-x86_64-20130522\sdk
+____________________
+</DW>
+Starting: Intent { act=android.intent.action.MAIN cmp=com.company.phonegap/.DefaultActivity }
+
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe kill-server
+____________________
+</DW>
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe devices
+____________________
+</DW>
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+List of devices attached 
+emulator-5554	device
+
+WARNING: no icon was specified in app settings. using default.
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.0.1
+ [checkenv] Installed at E:\adt-bundle-windows-x86_64-20130522\sdk
+
+-setup:
+     [echo] Project Name: phonegap
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 17.0.0
+     [echo] Resolving Build Target for phonegap...
+[gettarget] Project Target:   Android 4.2.2
+[gettarget] API level:        17
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for phonegap...
+[dependency] Library dependencies:
+[dependency] No Libraries
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Using Pre-Dexed phonegap-4217d868e11abf8247baeaa4c51549c2.jar <- D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\work\Html5\apk\COMCOM~1.PHO\bin\classes.dex...
+       [dx] Merged dex A (8 defs/
+       [dx] 2.4KiB) with dex B (60 defs/124.7KiB). Result is 68 defs/155.2KiB. Took 0.1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: D:\work\Html5\apk\COMCOM~1.PHO\res
+   [crunch] To destination dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating phonegap-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+正在将应用程序安装到 Android 模拟器中
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat install
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+imported.install:
+     [echo] Installing D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk onto default emulator or device...
+     [exec] 	pkg: /data/local/tmp/phonegap-debug.apk
+     [exec] Success
+     [exec] 58 KB/s (177104 bytes in 2.942s)
+
+install:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+正在 Android 模拟器中运行应用程序
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\ANDROI~2.BAT com.company.phonegap E:\adt-bundle-windows-x86_64-20130522\sdk
+____________________
+</DW>
+Starting: Intent { act=android.intent.action.MAIN cmp=com.company.phonegap/.DefaultActivity }
+
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe kill-server
+____________________
+</DW>
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe devices
+____________________
+</DW>
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+List of devices attached 
+emulator-5554	device
+
+WARNING: no icon was specified in app settings. using default.
+WARNING: no splash screen was specified in app settings. using default.
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat debug
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.0.1
+ [checkenv] Installed at E:\adt-bundle-windows-x86_64-20130522\sdk
+
+-setup:
+     [echo] Project Name: phonegap
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 17.0.0
+     [echo] Resolving Build Target for phonegap...
+[gettarget] Project Target:   Android 4.2.2
+[gettarget] API level:        17
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for phonegap...
+[dependency] Library dependencies:
+[dependency] No Libraries
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\bin\classes
+      [dex] input: D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Using Pre-Dexed phonegap-4217d868e11abf8247baeaa4c51549c2.jar <- D:\work\Html5\apk\COMCOM~1.PHO\libs\phonegap.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\work\Html5\apk\COMCOM~1.PHO\bin\classes.dex...
+       [dx] Merged dex A (8 defs/2.4KiB) with dex B (60 defs/124.7KiB). Result is 68 defs/155.2KiB. Took 0.1s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: D:\work\Html5\apk\COMCOM~1.PHO\res
+   [crunch] To destination dir: D:\work\Html5\apk\COMCOM~1.PHO\bin\res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating phonegap-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+[propertyfile] Updating property file: D:\work\Html5\apk\COMCOM~1.PHO\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+正在将应用程序安装到 Android 模拟器中
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd D:\work\Html5\apk\COMCOM~1.PHO
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1\bin\ant.bat install
+____________________
+</DW>
+Buildfile: D:\work\Html5\apk\COMCOM~1.PHO\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+imported.install:
+     [echo] Installing D:\work\Html5\apk\COMCOM~1.PHO\bin\phonegap-debug.apk onto default emulator or device...
+     [exec] 	pkg: /data/local/tmp/phonegap-debug.apk
+     [exec] Success
+     [exec] 57 KB/s (177135 bytes in 3.008s)
+
+install:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+正在 Android 模拟器中运行应用程序
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+C:\Windows\SysWOW64\cmd.exe /u /c C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\DWPHON~1\android\scripts\ANDROI~2.BAT com.company.phonegap E:\adt-bundle-windows-x86_64-20130522\sdk
+____________________
+</DW>
+Starting: Intent { act=android.intent.action.MAIN cmp=com.company.phonegap/.DefaultActivity }
+
+
+<DW>
+____________________
+set ANT_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\CONFIG~1\NATIVE~1\APACHE~1
+set ANDROID_HOME=E:\adt-bundle-windows-x86_64-20130522\sdk
+set JAVA_HOME=C:\PROGRA~2\Adobe\ADOBED~2.5\JDK
+set PATH=%JAVA_HOME%\bin;%PATH%
+cd E:\ADT-BU~1\sdk\PLATFO~1
+E:\adt-bundle-windows-x86_64-20130522\sdk\platform-tools\adb.exe kill-server
+____________________
+</DW>

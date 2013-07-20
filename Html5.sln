@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServer", "SocketServe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherSite", "AnotherSite\AnotherSite.csproj", "{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneGap", "PhoneGap\PhoneGap.csproj", "{67671CE4-1F83-47D3-BEAB-C4A616C4BA9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69A3FE1F-0EDF-44DF-8D0E-21200C4298D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67671CE4-1F83-47D3-BEAB-C4A616C4BA9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67671CE4-1F83-47D3-BEAB-C4A616C4BA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67671CE4-1F83-47D3-BEAB-C4A616C4BA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67671CE4-1F83-47D3-BEAB-C4A616C4BA9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
